@@ -1,0 +1,87 @@
+.carousel--item {
+    display: inline-block;
+    width: 20rem;
+    height: 30rem;
+    border-radius: 2rem;
+    margin: 0 1rem;
+    overflow: hidden;
+    background-color: var(--third-color);
+    cursor: pointer;
+    transition: 450ms ease;
+    transform-origin: center left;
+    position: relative;
+}
+
+.carousel--item:hover ~ .carousel--item {
+   transform: translate3d(10rem, 0, 0);
+}
+
+.carousel__container:hover .carousel--item {
+    opacity: 0.9;
+}
+
+.carousel__container:hover .carousel--item:hover {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+.carousel--item__img {
+    width: 20rem;
+    height: 30rem;
+    object-fit: cover;
+}
+.carousel--item__details {
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0% , var(--third-color) 90%);
+    font-size: 1rem;
+    opacity: .8;
+    transition: 450ms opacity;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color:#FFF;
+    padding: 0 1rem 2rem 1rem;
+}
+.carousel--item__details--icon {
+    width: 3rem;
+    height: 3rem;
+    margin: .2rem;
+}
+
+.carousel--item__details--title {
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.carousel--item__details--subtitle {
+    font-size: 1rem;
+    
+}
+
+.carousel--item__details:hover {
+    opacity: 1;
+}
+
+/* Scroll carousel */
+
+::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: .4rem;
+  }
+  ::-webkit-scrollbar {
+    width: .8rem; 
+    height: .8rem;   
+    background:rgba(255,255,255,.4);
+    border-radius: .4rem;
+  }
+  ::-webkit-scrollbar:hover {
+    background: #b3b3b3;
+    box-shadow: 002px1pxrgba(0, 0, 0, 0.2);
+  }
+  ::-webkit-scrollbar:hover:active {
+    background: #999;
+  }

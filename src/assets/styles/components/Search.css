@@ -1,0 +1,29 @@
+.main {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient( 180deg, var(--first-color), var(--fourth-color));
+}
+
+.main__title {
+    text-align: center;
+    font-size: 3.2rem;;
+}
+
+.main__input {
+    width: 70%;
+    max-width: 60rem;
+    padding: 1rem;
+    margin: 1rem;
+    border: 2px solid black;
+    border-radius: 1rem;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.308);
+}
+
+.main__input::placeholder {
+    color: black;
+    font-size: 1.5rem;
+}

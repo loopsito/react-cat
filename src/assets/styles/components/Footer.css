@@ -1,0 +1,19 @@
+.footer {
+    height: 6vh;
+    background-color: var(--first-color);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: .5rem 0 2rem 2rem;
+    margin-top: 2rem;
+}
+.footer a {
+    color: black;
+    text-decoration: none;
+    margin-right: 7rem;
+    font-size: 1.8rem;
+}
+
+.footer a:hover {
+    font-weight: bold;
+}

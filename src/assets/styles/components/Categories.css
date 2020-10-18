@@ -1,0 +1,6 @@
+.categories__title {
+    font-size: 2rem;
+    background-color: transparent;
+    background-color: var(--fourth-color);
+    padding-left: 2rem;
+}

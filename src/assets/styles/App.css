@@ -1,0 +1,22 @@
+:root {
+    --first-color: #FF4772;
+    --second-color: #E8FFB7;
+    --third-color: #470066;
+    --fourth-color: #0CCBE9;
+    --fifth-color: #B7FFD8;
+  }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: monospace;
+    color: black;
+    background-color: var(--first-color);
+}

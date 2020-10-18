@@ -1,0 +1,13 @@
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    padding: 0 1rem;
+    position: relative;
+    background-color: var(--fourth-color) ;
+}
+
+.carousel__container {
+    white-space: nowrap;
+    margin: 3rem 0;
+    padding-bottom: 1rem;
+}
