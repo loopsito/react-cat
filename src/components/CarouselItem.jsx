@@ -4,7 +4,7 @@ import item from '../assets/static/item.jpg';
 import likeIcon from '../assets/static/like.png';
 import plusIcon from '../assets/static/plus.png';
 
-const CarouselItem = (data) => {
+const CarouselItem = ({data}) => {
     console.log(data) //funciona
 
     return (
