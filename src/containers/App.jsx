@@ -9,18 +9,11 @@ import Footer from '../components/Footer';
 
 const App = () => {
 
-    const [ videos, setVideos] = useState([]);
-
-    useEffect(() => {
-        fetch('http://localhost:3000/initialState')
-            .then(response => response.json())
-            .then(data => setVideos(data))
-            .catch(error => {
-                console.log(error)
-            })
-    }, []);
-
-    console.log(videos.trends.length)
+    const [videos, guardarVideo] = useState([
+        {id: 1, title: 'Gatito feliz', date: 'Ayer'},
+        {id: 2, title:' Gatito triste', date: 'Hoy'},
+        {id: 3, title: 'Gatito normal', date: 'Hoy'},
+    ]);
 
     return (
         <div className="App">
@@ -28,7 +21,9 @@ const App = () => {
             <Search />
                 <Categories title="My list">
                     <Carousel>
-                        <CarouselItem />
+                        {
+                            videos.map( data => <CarouselItem key={data.id} data={data}/> )    
+                        }            
                     </Carousel>
                 </Categories>
 
